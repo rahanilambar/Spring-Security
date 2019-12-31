@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/user")
 public class Login {
     
     @GetMapping("/data")
@@ -17,15 +17,15 @@ public class Login {
         return "Welcome";
     }
     
-    @GetMapping("/user")
-    public String User(){
-        return "Welcome user";
-    }
-    
-    @GetMapping("/admin")
-    public String Admin(){
-        return "Welcome admin";
-    }
+//    @GetMapping("/user")
+//    public String User(){
+//        return "Welcome user";
+//    }
+//    
+//    @GetMapping("/admin")
+//    public String Admin(){
+//        return "Welcome admin";
+//    }
     
     @GetMapping("/some")
     public String fake(){
